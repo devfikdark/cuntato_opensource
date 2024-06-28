@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+$green: #045c0c;
+$white-green: #f3f3f3;
+$black: #141c14;
+$purple: #7b22d6;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $white-green;
+  color: $black;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Google Sans";
+  color: $green;
+}
+nav {
+  .btn {
+    background-color: #fff !important;
+    color: $green !important;
+    margin: 1rem 1rem;
+    font-weight: 600;
+    border: none;
+
+    &:hover {
+      background-color: #045c0b21 !important;
+    }
+  }
+  #avatar {
+    margin: .8rem 1rem;
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+  .brand-logo {
+    margin: 0.1rem 1rem;
+    font-family: "Righteous", cursive;
+    color: $green;
+  }
+}
+.section {
+  height: 90vh;
+}
+.dropdown-content {
+  border-radius: 5px;
+}
+.small-div {
+  position: absolute;
+  width: 100vw;
+  height: 18em;
+  margin: 0 auto;
+  top: 0;
+  background-color: $green;
+  z-index: -1;
+}
+.s1 {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $green;
+  z-index: -1;
+}
+#dropdown1 {
+  a {
+    color: $black !important;
+  }
+}
+
+.progress {
+  margin: 0;
+  // display: none;
+}
+.circle-loader {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  .text {
+    font-size: 2em;
+    font-family: "Google Sans", sans-serif;
+    margin-top: 2rem;
+    color: grey;
+  }
+}
+
+.banner-text {
+  margin-top: 4em;
+}
+
+.btn {
+  background-color: $green !important;
+  color: #fff !important;
+  font-family: "Google Sans";
+  text-transform: none;
+  border-radius: 5px;
+  border: 1px solid $green;
+}
+
+.auth-btn {
+  height: 3rem;
+  width: 40%;
+  line-height: 3;
+  background-color: #fff !important;
+  color: $black !important;
+  border: 1px solid $black;
+
+  &:hover {
+    background-color: $black !important;
+    color: #fff !important;
+  }
+
+  img {
+    margin-top: 0.6rem;
+  }
+}
+
+.custom-btn {
+  background-color: $green !important;
+  color: #fff !important;
+  height: 4rem;
+  width: 16rem;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #fff !important;
+    color: $green !important;
+  }
+}
+
+.project-banner {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.tabs {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  background: transparent;
+}
+
+.tabs {
+  .tab {
+    a {
+      color: #045c0b75 !important;
+      background: transparent;
+      text-transform: none;
+    }
+  }
+  margin-bottom: 3em;
+}
+/*Black color to the text*/
+.tabs .tab a:hover {
+  background-color: transparent;
+  color: $green !important;
+}
+
+/*Text color on hover*/
+.tabs .tab a.active {
+  background-color: transparent !important;
+  color: $green !important;
+  font-weight: bold;
+}
+
+/*Background and text color when a tab is active*/
+.tabs .indicator {
+  background-color: $green !important;
+}
+
+// .modal {
+//   width: 40%;
+//   height: 40%;
+// }
+.rounded {
+  border-radius: 10px;
+}
+.card-panel {
+  background-color: #fff;
+  color: $green;
+
+  &:hover {
+    background-color: $white-green;
+  }
+}
+.project-card {
+  color: $black !important;
+  h5 {
+    margin-top: 0;
+  }
+  i {
+    cursor: pointer;
+  }
+  .project-link {
+    color: $green;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.condition {
+  li {
+    color: red;
+  }
+}
+
+.add-icon {
+  font-size: 2.5em;
+}
+
+.pagination > li > a {
+  background-color: white;
+
+  color: $green;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: $green;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: $green !important;
+  border: solid 1px $green !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: $white-green !important;
+  border: solid 1px $green;
+}
+
+.blob {
+  height: 270px;
+  width: 270px;
+  position: absolute;
+  right: 1%;
+  top: 3.5%;
+  z-index: -1;
+}
+#wave {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transform: scaleY(-1);
+
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.domain-name-changed-btn {
+  margin-top: 2rem;
+
+  .domain-not-change {
+    background-color: transparent !important;
+    color: #fc2424 !important;
+    margin-left: 0.5rem;
+    border: none;
+
+    &:hover {
+      background-color: #fc242417 !important;
+    }
+  }
+}
+
+#profile {
+  .profile-img {
+    width: 300px;
+    height: auto;
+    -webkit-box-shadow: -1px 3px 35px -16px rgba(4, 92, 12, 1);
+    -moz-box-shadow: -1px 3px 35px -16px rgba(4, 92, 12, 1);
+    box-shadow: -1px 3px 35px -16px rgba(4, 92, 12, 1);
+  }
+  .profile-info {
+    padding-bottom: 1rem;
+
+    h4,
+    h5 {
+      font-family: "Google Sans";
+      color: $black;
+    }
+  }
+}
+.modal {
+  border-radius: 10px;
+}
+
+.no-msg-img {
+  width: 500px;
+  height: auto;
+}
+
+.copy-icon {
+  margin-top: 1rem;
+}
+
+// .vr {
+//   border-left: 1px solid rgb(187, 184, 184);
+//   height: 25rem;
+//   position: absolute;
+//   right: 50.7%;
+// }
+code {
+  background-color: #dddddd;
+  cursor: copy;
+}
+#code-copy-btn {
+  cursor: pointer;
+}
+
+.page-footer {
+  background-color: $black;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: 0;
+  }
+
+  .custom-btn {
+    height: 3rem;
+    width: 12rem;
+    font-size: 1.125rem;
+    line-height: 2.5;
+    border-radius: 10px;
+  }
+
+  .project-btn {
+    padding: 0;
+  }
+  .auth-btn {
+    height: 3rem;
+    width: 100%;
+  }
+  .blob {
+    display: none;
+  }
+  .banner-text {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+      img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+      style-src  'self' 'unsafe-inline' *"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='shortcut icon' type='image/x-icon' href='./img/svg/cuntato.svg' />
+    <title>Profile | <%= user.name %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"    
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav class="white z-depth-1">
+          <div class="nav-wrapper">
+            <a href="/dashboard" class="brand-logo">Cuntato</a>
+            <ul id="nav-mobile" class="right">
+              <li>
+                <img
+                  src=<%= user.picture %>
+                  alt="avatar"
+                  id="avatar"
+                  class="responsive-img circle dropdown-trigger"
+                  data-target="dropdown1"
+                />
+              </li>
+            </ul>
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="/dashboard">Dashboard</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="/logout">Sign Out</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <span id=<%= user.id %> ></span>
+      <div class="container">
+        <div class="row" id="profile">
+          <div class="col s12">
+            <div class="card rounded">
+              <div class="card-content">
+                <div class="center-align">
+                  <img
+                    src=<%= user.picture %>
+                    alt="avatar"
+                    class="responsive-img circle halfway-fab profile-img"
+                  />
+                  <div class="profile-info">
+                    <h4><%= user.name %></h4>
+                    <h5><%= user.email %></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="collection">
+                      <a
+                        href="/dashboard"
+                        class="collection-item green-text text-darken-4"
+                        ><span class="new badge green darken-4" id="projectCount"></span>Project
+                        created</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Materialize js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/app.js"></script>
+    <script src="./js/profileController.js"></script>
+  </body>
+</html>
