@@ -2,10 +2,9 @@
 
 ![cuntato](public/img/cuntato.svg)
 
-![stars](https://badgen.net/github/stars/pro-js/cuntato)
-![license](https://badgen.net/github/license/pro-js/cuntato)
-![Last commit](https://badgen.net/github/last-commit/pro-js/cuntato)
-![git](https://badgen.net/badge/icon/git?icon=git&label)
+![stars](https://badgen.net/github/stars/devfikdark/cuntato_opensource)
+![license](https://badgen.net/github/license/devfikdark/cuntato_opensource)
+![Last commit](https://badgen.net/github/last-commit/devfikdark/cuntato_opensource)
 
 </div>
 
